@@ -24,8 +24,9 @@ function App() {
   };
 
   useEffect(() => {
-    if (localStorage.getItem("auth").length > 5) {
-      setAuth(localStorage.getItem("auth"));
+    if (localStorage.getItem("auth") !== null) {
+      if (localStorage.getItem("auth").length > 5)
+        setAuth(localStorage.getItem("auth"));
     }
   }, []);
   return (
