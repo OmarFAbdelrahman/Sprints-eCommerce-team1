@@ -19,7 +19,7 @@ const authRouter = require("./routes/authRoutes");
 const notFoundMiddleware = require("./middleware/not-found");
 const errorHandlerMiddleware = require("./middleware/error-handler");
 
-app.use(cors({ credentials: true, origin: "http://localhost:3006" }));
+app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 // app.use(function (req, res, next) {
 //   res.header("Access-Control-Allow-Credentials", true);
 //   res.header("Access-Control-Allow-Origin", req.headers.origin);
